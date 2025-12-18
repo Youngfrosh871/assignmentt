@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nav Bar</title>
+    </head>
+    <style class="type/css">
+        *{
+            text-decoration: none;
+        }
+        
+        .nav-bar{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .nav-div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+            font-size: 1.5rem;
+            color: blue;
+            font-weight: bold;
+            font-size: 40px;
+        }
+        li{
+            list-style: none;
+            display: inline-block;
+        }
+        li a{
+         font-size: 18px;   
+         font-weight: bold;
+         margin-right: 25px;
+         color: black;
+        }
+        .nav-container{
+            max-width: 1200px;
+            margin-left: 0px;
+            box-sizing: border-box;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+            padding-bottom: 25px;
+        }
+        .Website{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            margin-left: 12px;
+            color: black;
+            display: block;
+            padding-top: 15px;
+        }
+        .rated{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 40px;
+            width: 400px;
+            margin-top: 10px;
+            margin-left: 12px;
+            display: inline-block;
+            padding-top: 15px;
+            
+            
+        }
+        .Nigeria{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-radius: 10px;
+            border-color: green;
+            font-size: 33px;
+            color: blue;
+            background-color: ghostwhite;
+            
+        }
+        .image{
+            padding-top: 40px;
+            height: 400px;
+            width: 300px;
+            float: right;
+        }
+        .note{
+            width: 600px;
+            font-size: 16px;
+            margin-left: 12px;
+            padding-bottom: 30px;
+        }
+        .Free{
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+            border-color: lightseagreen;
+            background-color: lightseagreen;
+            color: white;
+            font-weight: bold;
+            margin-left: 12px;
+
+        }
+        .followers{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            justify-content: space-between;
+            text-align: left;
+            display: flex;
+            max-width: 1200px;
+            word-spacing: 12px;
+        }
+        .Flexible{
+            font-size: 30px;
+            text-align: left;
+            padding-left: 20px;
+            border-radius: 10px;
+            height: 200px;
+            padding-top: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-color: lightgreen;
+            background-color: rgb(16, 207, 16);
+            color: white;
+            width: 400px;
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .Work{
+            font-size: 16px;
+            
+        }
+        .Competitive{
+            font-size: 30px;
+            text-align: left;
+            padding-left: 20px;
+            border-radius: 10px;
+            height: 200px;
+            padding-top: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 10px;
+            background-color: lightgoldenrodyellow;
+            border-color: lightgoldenrodyellow;
+            color: black;
+            width: 400px;
+            margin-left: 20px;
+        }
+        .Cleaning{
+            font-size: 16px;
+            
+        }
+        .Professional{
+            font-size: 30px;
+            text-align: left;
+            padding-left: 20px;
+            border-radius: 10px;
+            height: 200px;
+            padding-top: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 10px;
+            background-color: lightgoldenrodyellow;
+            border-color: lightgoldenrodyellow;
+            color: black;
+            width: 400px;
+        }
+        .Offer{
+            font-size: 16px;
+            
+        }
+        .US{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: left;
+        }
+        .trusted{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+            width: 450px;
+        }
+        .features{
+            width: 600px;
+            padding-bottom: 30px;
+        }
+        .Bold{
+         font-weight: bold;   
+        }
+        .computer{
+            width: 500px;
+            height: 450px;
+            float: right;
+        }
+        .Read{
+            font-size: 24px;
+            background-color: cornflowerblue;
+            color: white;
+            border-radius: 8px;
+            border-color: cornflowerblue;
+            cursor: pointer;
+        }
+        .Our{
+            margin-top: 120px;
+        }
+        .Tailored{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            width: 500px;
+        }
+        .more{
+            font-size: 24px;
+            border-radius: 8px;
+            color: white;
+            background-color: green;
+            cursor: pointer;
+            border-color: green;
+            margin-right: 160px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+        .check{
+            border-radius: 8px;
+            color: white;
+            background-color: green;
+            cursor: pointer;
+            border-color: green;
+            margin-right: 70px;
+            font-size: 24px;
+        }
+        .discount{
+            font-size: 24px;
+            border-radius: 8px;
+            color: white;
+            background-color: green;
+            cursor: pointer;
+            border-color: green;
+            margin-right: 160px;
+        }
+        .mark{
+            border-radius: 8px;
+            color: white;
+            background-color: green;
+            cursor: pointer;
+            border-color: green;
+            margin-right: 70px;
+            font-size: 24px;
+        }
+        .count{
+            font-size: 24px;
+            border-radius: 8px;
+            color: white;
+            background-color: green;
+            cursor: pointer;
+            border-color: green;
+            margin-right: 160px;
+        }
+        .mak{
+            border-radius: 8px;
+            color: white;
+            background-color: green;
+            cursor: pointer;
+            border-color: green;
+            font-size: 24px;
+        }
+        .first{
+            padding-left: 10px;
+            padding-top: 20px;
+            padding-right: 75px;
+        }
+        .second{
+            padding-right: 75px;
+        }
+        .carpet{
+            font-size: 24px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 30px;
+            margin-right: 225px;
+            border: none;
+            margin-top: 10px;
+        }
+        .commercial{
+            font-size: 24px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 100px;
+            border: none;
+            margin-bottom: 40px;
+        }
+        .window{
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            border: none;
+        }
+        .Restore{
+            width: 350px;
+        }
+        .fourth{
+            padding-left: 10px;
+            padding-top: 20px;
+            padding-right: 75px;
+        }
+        .fifth{
+            padding-right: 75px;
+        }
+        .domestic{
+            font-size: 24px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 30px;
+            margin-right: 200px;
+            border: none;
+            margin-top: 10px;
+        }
+        .club{
+            font-size: 24px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 210px;
+            border: none;
+            margin-bottom: 40px;
+        }
+        .after{
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            border: none;
+        }
+        .six{
+            padding-left: 10px;
+            padding-top: 30px;
+            padding-right: 75px;
+        }
+        .seven{
+            padding-right: 75px;
+        }
+        .school{
+            font-size: 24px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 30px;
+            margin-right: 230px;
+            border: none; 
+            margin-top: 10px;
+        }
+        .store{
+            font-size: 24px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 260px;
+            border: none;
+            margin-bottom: 40px;
+        }
+        .regularly{
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            border: none;
+        }
+        .eight{
+            padding-left: 10px;
+            padding-top: 30px;
+            padding-right: 75px; 
+        }
+        .nine{
+            padding-right: 75px;   
+        }
+        .washroom{
+            font-size: 24px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 30px;
+            margin-right: 190px;
+            border: none; 
+            margin-top: 10px;
+        }
+        .tenancy{
+            font-size: 24px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 150px;
+            border: none;
+            margin-bottom: 40px;
+        }
+        .airbnb{
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            border: none;
+        }
+        .slider{
+            position: relative;
+        }
+        .background{
+            width: 1250px;
+            padding-top: 60px;
+        }
+        .appointment{
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            font-size: 40px;
+            padding-bottom: 700px;
+            padding-right: 150px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            border: none;
+            background-color: wheat;
+            color: black;
+            padding-left: 30px;
+            padding-top: 50px;
+        }
+        .name{
+            position: absolute;
+            top: 30%;
+            font-size: 18px;
+            border-radius: 8px;
+            border: none;
+            width: 250px;
+            height: 50px;
+            left: 7%;
+            top: 25%;
+            padding-left: 10px;
+        }
+        .email{
+            position: absolute;
+            top: 30%;
+            font-size: 18px;
+            border-radius: 8px;
+            border: none;
+            width: 250px;
+            height: 50px;
+            right: 45%;
+            top: 25%;
+            padding-left: 10px;
+        }
+        .phone{
+            position: absolute;
+            top: 35%;
+            font-size: 18px;
+            border-radius: 8px;
+            border: none;
+            width: 250px;
+            height: 50px;
+            left: 7%;
+            padding-left: 10px;
+        }
+        .choose{
+            position: absolute;
+            top: 35%;
+            font-size: 18px;
+            border-radius: 8px;
+            border: none;
+            width: 250px;
+            height: 50px;
+            right: 45%;
+            top: 35%;
+            padding-left: 10px;
+        }
+        .message{
+            position: absolute;
+            top: 40%;
+            font-size: 18px;
+            border-radius: 8px;
+            border: none;
+            width: 500px;
+            height: 150px;
+            left: 7%;
+            top: 50%;
+            padding-left: 10px;
+        }
+        .submit{
+            position: absolute;
+            top: 70%;
+            width: 120px;
+            height: 70px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 5px;
+            border: none;
+            left: 7%;
+            padding-left: 10px;
+        }
+        .process{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            text-align: center;
+            margin-top: 90px;
+            font-weight: bold;
+        }
+        .efficient{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+
+        }
+        .icon{
+            position: relative;
+        }
+        .empty{
+            position: absolute;
+            width: 100px;
+            height: 90px;
+            margin-left: 150px;
+            border-radius: 8px;     
+        }
+        .e-internet{
+            width: 60px;
+            margin-left: 170px;
+            position: absolute;
+            margin-top: 15px;
+        }
+        .invalid{
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            border-radius: 8px;
+            margin-left: 600px;
+        }
+        .boot{
+            position: absolute;
+            margin-top: 20px;
+            width: 60px;
+            margin-left: 620px;
+        }
+        .valid{
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            border-radius: 8px;
+            margin-left: 1000px;
+        }
+        .book{
+            position: absolute;
+            width: 60px;
+            margin-left: 1020px;
+            margin-top: 10px;
+        }
+        
+        .find{
+            font-size: 20px;
+            margin-top: 100px;
+            margin-left: 150px;
+            font-weight: bold;
+            border: none;
+        }
+        .location{
+            font-size: 20px;
+            margin-left: 300px;
+            font-weight: bold;
+            border: none;
+        }
+        .calendar{
+            font-size: 20px;
+            margin-left: 180px;
+            font-weight: bold;
+            border: none;
+        }
+        .easily{
+            width: 300px;
+            margin-left: 50px;
+            font-size: 18px;
+            border: none;
+            margin-top: 20px;
+        }
+        .variety{
+            width: 350px;
+            margin-left: 110px;
+            font-size: 18px;
+            border: none;
+            margin-top: 20px;
+        }
+        .clicks{
+            width: 350px;
+            margin-left: 50px;
+            font-size: 18px;
+            border: none;
+            margin-top: 20px;
+        }
+        .surrond{
+            position: relative;
+        }
+        .clinge{
+            width: 1250px;
+            height: 500px;
+            margin-top: 30px;
+        }
+        .achieve{
+            position: absolute;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            top: 5%;
+            left: 40%;
+            font-size: 22px;
+            color: wheat;
+        }
+        .spot{
+            position: absolute;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 36px;
+            top: 10%;
+            left: 40%;
+            width: 450px;
+            color: wheat;
+        }
+        .person{
+            position: absolute;
+            width: 80px;
+            top: 35%;
+            right: 85%;
+        }
+        .document{
+            position: absolute;
+            width: 80px;
+            top: 35%;
+            right: 60%;
+        }
+        .solid{
+            position: absolute;
+            width: 80px;
+            top: 35%;
+            right: 35%;
+        }
+        .elementor{
+            position: absolute;
+            width: 80px;
+            top: 35%;
+            right: 10%;
+        }
+        .K{
+            position: absolute;
+            font-size: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            top: 40%;
+            left: 7%;
+        }
+        .L{
+            position: absolute;
+            font-size: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            top: 40%;
+            left: 30%;
+        }
+        .M{
+            position: absolute;
+            font-size: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            top: 40%;
+            left: 55%;
+            color: white;
+        }
+        .N{
+            position: absolute;
+            font-size: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            top: 40%;
+            left: 82%;
+            color: white;
+        }
+        .provide{
+            position: absolute;
+            top: 70%;
+            left: 6%;
+            color: white;
+        }
+        .order{
+            position: absolute;
+            top: 70%;
+            left: 33%;
+            color: white;
+        }
+        .team{
+            position: absolute;
+            top: 70%;
+            left: 57%;
+            color: white;  
+        }
+        .star{
+            position: absolute;
+            top: 70%;
+            left: 83%;
+            color: white;    
+        }
+        
+
+        
+    </style>
+    <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+    padding: 1rem 2rem;">
+<nav class="nav-bar">
+    <div class="nav-container">
+        <div class="nav-div">
+        <div class="logo">YOUNG FROSH</div>
+        <ul class="nav-menu">
+        <div class="settiings">
+        <div class="nav-bars">
+        <li><a href="#HOME" class="active">HOME</a></li>
+        <li><a href="#SERVICES">OUR SERVICE</a></li>
+        <li><a href="#ABOUT US">ABOUT US</a></li>
+        <li><a href="CONTACT US">CONTACT_US</a></li>
+        </div>
+        </ul>
+    </div>
+</nav>
+<p class="Website">Build your Website and MOBILE APP</p>
+<p class="rated">TOP RATED WEBSITE DEVELOPER IN <button class="Nigeria">NIGERIA</button></p>
+<img class="image" src="assets/images/Screenshot 2025-11-21 111005.png"> 
+<p class="note">At Young Frosh Services, we offer exceptional website developer throughout Nigeria. With over millions of satisfied client and some months of experience, our team ensures that your home or office space remains pristine. We are committed to providing flexible scheduling, professional service, and and affordable pricing to cater to your website needs.  </p>
+<button class="Free">GET A FREE ESTIMATE</button>
+<nav class="followers">
+    <div class="followers-container">
+        <ul class="followers menu">
+        <li>1 Million+</li>
+        <li class="thirty">30+</li>
+        <li>500+</li>
+        </div>
+        </ul>
+    </div>
+</nav>
+<button class="Flexible">
+    Flexible Scheduling <br><p class="Work">We work around your busy schedule, offering evening and weekend appointments to suit your needs.</p>
+</button>
+<button class="Professional">
+    Professional Staff <br><p class="Cleaning">Our cleaning staff is fully trained, insured, and dedicated to providing the highest standard of service.</p>
+</button>
+<button class="Competitive">
+    Competitive Pricing <br><p class="Offer">We offer affordable cleaning services without compromising on quality, ensuring you get the best value for your money.</p>
+</button>
+<p class="US">About US</p>
+<img class="computer" src="assets/images/Screenshot 2025-11-26 115923.png" alt="">
+<p class="trusted">Your Trusted Partner for Comprehensive Website Developing</p>
+<p class="features">At <u class="Bold">Young Frosh Website Services,</u> we take pride in offering a wide range of cleaning services designed to keep spaces spotless, organized, and hygenic. From homes to offices,
+school to stores, we are your go-to cleaning experts. Our team is equipped to handle everything from routine cleaning to specialized services, ensuring that every corner of your
+space is maintained to the highest standards.</p>
+<button class="Read">READ MORE</button>
+<h1 class="Our">Our Services</h1>
+<p class="Tailored">Comprehensive Cleaning Solutions Tailored to you</p>
+<button class="more">Discount 35%</button>
+<button class="check">&#x2713;</button>
+<button class="discount">Discount 35%</button>
+<button class="mark">&#x2713;</button>
+<button class="count">Discount 35%</button>
+<button class="mak">&#x2713;</button>
+<img class="first" src="assets/images/Screenshot 2025-11-29 135209.png" alt="">
+<img class="second" src="assets/images/Screenshot 2025-11-29 141127.png" alt="">
+<img src="assets/images/Screenshot 2025-11-29 142411.png" alt="">
+<button class="carpet">Carpet Cleaning</button>
+<button class="commercial">Office/Commercial Cleaning</button>
+<button class="window">Window Cleaning</button>
+<button class="more">Discount 35%</button>
+<button class="check">&#x2713;</button>
+<button class="discount">Discount 35%</button>
+<button class="mark">&#x2713;</button>
+<button class="count">Discount 35%</button>
+<button class="mak">&#x2713;</button>
+<img class="fourth" src="assets/images/Screenshot 2025-11-30 074638.png" alt="">
+<img class="fifth" src="assets/images/Screenshot 2025-11-30 075836.png" alt="">
+<img src="assets/images/Screenshot 2025-11-30 080003.png" alt="">
+<button class="domestic">Domestic Cleaning</button>
+<button class="club">Bar/Club Cleaning</button>
+<button class="after">After Building Cleaning</button>
+<button class="more">Discount 35%</button>
+<button class="check">&#x2713;</button>
+<button class="discount">Discount 35%</button>
+<button class="mark">&#x2713;</button>
+<button class="count">Discount 35%</button>
+<button class="mak">&#x2713;</button>
+<img class="six" src="assets/images/Screenshot 2025-11-30 081458.png" alt="">
+<img class="seven" src="assets/images/Screenshot 2025-11-30 081512.png" alt="">
+<img src="assets/images/Screenshot 2025-11-30 081530.png" alt="">
+<button class="school">School Cleaning</button>
+<button class="store">Store Cleaning</button>
+<button class="regularly">Regularly/Weekly Cleaning</button>
+<button class="more">Discount 35%</button>
+<button class="check">&#x2713;</button>
+<button class="discount">Discount 35%</button>
+<button class="mark">&#x2713;</button>
+<button class="count">Discount 35%</button>
+<button class="mak">&#x2713;</button>
+<img class="eight" src="assets/images/Screenshot 2025-11-30 085451.png" alt="">
+<img class="nine" src="assets/images/Screenshot 2025-11-30 085507.png" alt="">
+<img src="assets/images/Screenshot 2025-11-30 085521.png" alt="">
+<button class="washroom">Washroom Cleaning</button>
+<button class="tenancy">End of Tenancy Cleaning</button>
+<button class="airbnb">Airbnb Cleaning</button>
+<div class="slider">
+<img class="background" src="assets/images/Screenshot 2025-12-01 165923.png" alt="">
+<button class="appointment">Make An Appointment</button>
+<input class="name" type="text" placeholder="Your Name">
+<input class="email" type="text" placeholder="Your Email">
+<input class="phone" type="text" placeholder="Your Phone">
+<input class="choose" type="text" placeholder="Choose a Service">
+<input class="message" type="text" placeholder="Message Me">
+<button class="submit">SUBMIT NOW</button>
+</div>
+<p class="process">OUR WORK PROCESS</p>
+<p class="efficient">Effortless and Efficient Cleaning <br>Services</p>
+<div class="icon">
+<button class="empty"></button>
+<img class="e-internet" src="assets/images/Screenshot 2025-12-03 093655.png" alt="">
+<button class="invalid"></button>
+<img class="boot" src="assets/images/Screenshot 2025-12-03 100627.png" alt="">
+<button class="valid"></button>
+<img class="book" src="assets/images/Screenshot 2025-12-09 094349.png" alt="">
+</div>
+<div>
+<button class="find">Find Us</button>
+<button class="location">Choose Your Location</button>
+<button class="calendar">Book Appointment</button>
+</div>
+<div>
+<button class="easily">Easily access our website to learn more about our services. </button>
+<button class="variety">Select from a wide variety of cleaning services that best suits your needs.</button>
+<button class="clicks">Confirm your services with just few clicks, and we will take care of the rest.</button>
+</div>
+<div class="surrond">
+<img class="clinge" src="assets/images/Screenshot 2025-11-30 092715.png" alt="">
+<p class="achieve">OUR ACHIVEMENTS</p>
+<p class="spot">Premium Cleaning Solutions 100% Spotless Results</p>
+<img class="person" src="assets/images/Screenshot 2025-12-11 121203.png" alt="">
+<img class="document" src="assets/images/Screenshot 2025-12-11 121124.png" alt="">
+<img class="solid" src="assets/images/Screenshot 2025-12-11 121718.png" alt="">
+<img class="elementor" src="assets/images/Screenshot 2025-12-11 122111.png" alt="">
+<p class="K">8K</p>
+<p class="L">12K</p>
+<p class="M">300+</p>
+<p class="N">7K+</p>
+<p class="provide">Service Provide</p>
+<p class="order">Order Served</p>
+<p class="team">Team Members</p>
+<p class="star">5 Star Received</p>
+</div>
+
+
+    </body>
+
+
+
+
+    
+</html>
